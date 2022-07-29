@@ -1,2 +1,86 @@
-in development...
-coming soon!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country API | Powered by apibuilderlab.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <h1>Country API</h1>
+                    <h5><i>Powered by</i> <br><img src="https://www.apibuilderlab.com/images/abl-logo-dark.png" width="20"> apibuilderlab.com</h5>
+
+                    <div class="line"></div>
+
+                    <div class="desc">
+                        <p>
+                            If you looking for API for find country, country code and phone code for each country for your project, below I share the API.
+                        </p>
+
+                        <p>
+                            I use <a href="https://www.apibuilderlab.com" target="_blank"> Api Builder Lab</a> to create the api. <br><br>
+
+                            <strong>x-access-token on Header request:</strong> <br>
+                            <i>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Imd1c2VrYS5kZXZAZ21haWwuY29tIiwiaWF0IjoxNjU4ODA1NTAwfQ.2Jy6zlV9pgCk-7kU1LC-HUViBlAaAEyYpT5pgre3BYU</i>
+                            <br><br>
+                            <img src="attach1.jpg" class="imgf img-center" alt="Token ABL">
+                            <br><br>
+                        </p>
+
+                        <table>
+                            <tr>
+                                <th>METHOD</th><th>URL</th><th>Description</th><th>JSON body</th>
+                            </tr>
+                            <tr>
+                                <td>GET</td>
+                                <td><pre>https://app.apibuilderlab.com/api/getreq/1/all</pre></td>
+                                <td>Use to get all country include country code & phone code</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>POST</td>
+                                <td><pre>https://app.apibuilderlab.com/api/searchreq/1</pre></td>
+                                <td>Use to search. In this case field are country_name_aka_111752597, country_name_aka_111752597, country_name_aka_111752597.</td>
+                                <td>
+                                    This JSON is to search field country name. 
+<pre>
+{
+"country_name_aka_111752597": "braz"
+}
+</pre>
+                                    <br>
+
+                                    Response will be:
+<pre>
+{
+    "data": [
+        {
+            "id": 30,
+            "created_datetime": "2022-07-26T03:30:00.000Z",
+            "country_name": "Brazil",
+            "country_code": "BR",
+            "phone_code": "+55"
+        }
+    ]
+}
+</pre>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <pre>
+                            
+                        </pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
