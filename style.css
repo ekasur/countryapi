@@ -34,10 +34,12 @@ body{
 .main .content h1{
     font-family: 'Playfair Display', serif;
     font-weight: 600;
+    text-align: center;
 }
 .main .content h5{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 .main .content{
     background: #fff;
@@ -55,12 +57,42 @@ body{
 .main .content .desc{
     line-height: 26px;
     font-size: 15px;
+    
+}
+.main .content .desc .wraptable{
+    overflow: scroll;
 }
 .main .content .desc table{
     border-collapse: collapse;
     width: 100%;
 }
+.main .content .desc table tr{
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.main .content .desc table tr:hover{
+    background-color: #676767;
+    color: #fff;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
 .main .content .desc table tr td{
     border: 1px solid #242424;
     padding: 5px 10px;
+}
+.main .content .desc table tr th{
+    background: #715CC3;
+    border: 1px solid #715CC3;
+    color: #fff;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 991px){
+    .container{
+        width: 94%;
+    }
 }

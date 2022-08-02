@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="content">
                     <h1>Country API</h1>
-                    <h5><i>Powered by</i> <br><img src="https://www.apibuilderlab.com/images/abl-logo-dark.png" width="20"> apibuilderlab.com</h5>
+                    <h5><i>Powered by</i> <br><img src="https://www.apibuilderlab.com/images/abl-logo-dark.png" width="20"> <a href="https://www.apibuilderlab.com/?source=gist" target="_blank">apibuilderlab.com</a></h5>
 
                     <div class="line"></div>
 
@@ -23,7 +23,7 @@
                         </p>
 
                         <p>
-                            I use <a href="https://www.apibuilderlab.com" target="_blank"> Api Builder Lab</a> to create the api. <br><br>
+                            I use <a href="https://www.apibuilderlab.com?source=gist" target="_blank"> Api Builder Lab</a> to create the api. <br><br>
 
                             <strong>x-access-token on Header request:</strong> <br>
                             <i>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Imd1c2VrYS5kZXZAZ21haWwuY29tIiwiaWF0IjoxNjU4ODA1NTAwfQ.2Jy6zlV9pgCk-7kU1LC-HUViBlAaAEyYpT5pgre3BYU</i>
@@ -32,6 +32,7 @@
                             <br><br>
                         </p>
 
+                        <div class="wraptable">
                         <table>
                             <tr>
                                 <th>METHOD</th><th>URL</th><th>Description</th><th>JSON body</th>
@@ -45,9 +46,9 @@
                             <tr>
                                 <td>POST</td>
                                 <td><pre>https://app.apibuilderlab.com/api/searchreq/1</pre></td>
-                                <td>Use to search. In this case field are country_name_aka_111752597, country_name_aka_111752597, country_name_aka_111752597.</td>
+                                <td>Use to search. In this case field are country_name_aka_111752597, country_code_aka_11185948, phone_code_aka_1118105.</td>
                                 <td>
-                                    This JSON is to search field country name. 
+                                    This request JSON is to search field country name. 
 <pre>
 {
 "country_name_aka_111752597": "braz"
@@ -71,11 +72,61 @@
 </pre>
                                 </td>
                             </tr>
-                        </table>
+                            <tr>
+                                <td>GET</td>
 
-                        <pre>
-                            
-                        </pre>
+                                <td>
+<pre>https://app.apibuilderlab.com/api/getreq/1/setlimit/{limit}
+Example:
+https://app.apibuilderlab.com/api/getreq/1/setlimit/5
+</pre>
+                                </td>
+                                <td>
+                                    This use to limit 5 record.
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>GET</td>
+
+                                <td>
+<pre>https://app.apibuilderlab.com/api/getreq/1/paging/{start}/{limit}
+Example: 
+https://app.apibuilderlab.com/api/getreq/1/paging/0/5
+</pre>
+                                </td>
+                                <td>
+                                    This use to limit record with starting point. It be useful to make pagination from your application.
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>GET</td>
+
+                                <td>
+<pre>https://app.apibuilderlab.com/api/getreq/1/{id_record}
+Example: 
+https://app.apibuilderlab.com/api/getreq/1/4
+</pre>
+                                </td>
+                                <td>
+                                    This use to limit record with starting point. It be useful to make pagination from your application.
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        </div>
+
+
+                        <p><br><br>
+                            Hope you guys enjoy the API.<br><br>
+
+                            <b>Cheers.</b><br>
+                            Give some feedback on <a href="https://www.facebook.com/apibuilderlab" target="_blank">Facebook</a> or <a href="https://twitter.com/apibuilderlab" target="_blank">Twitter</a>
+                        </p>
+
                     </div>
                 </div>
 
